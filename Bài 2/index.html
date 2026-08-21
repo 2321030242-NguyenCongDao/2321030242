@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>bài 2</title>
+    </head>
+    <body>
+        <!-- dùng để chú thích
+         có 2 cách để chú thích
+         cách 1: ctrl + k + c
+         cách 2: ctrl + / 
+         -->
+         <!-- thẻ p dùng phân loại -->
+          <p>thẻ p: dùng để phân loại đoạn văn bản</p>
+        <!-- thẻ H dùng để phân loại tiêu đề -->
+          <h1>thẻ h1: tiêu đề 1</h1>
+          <h2>thẻ h2: tiêu đề 2</h2>
+          <h3>thẻ h3: tiêu đề 3</h3>
+        <!-- thẻ br dùng để xuống dòng -->
+        <div>
+          <p>thẻ br: dùng để xuống dòng</p>
+          <div>thẻ div: dùng để chia khối</div>
+        <!-- in chữ đậm-->
+          <br><b>thẻ b: viết chữ đậm</b>
+          <br><strong>thẻ strong: viết chữ đậm</strong>
+        <!-- in chữ nghiêng-->
+          <br><i>thẻ i: viết chữ nghiêng</i>
+        <!-- in chữ gạch chân-->
+          <br><u>thẻ u: viết chữ gạch chân</u>
+          <br><b><i><u>Nguyễn Công Đạo</u></i></b>
+        </div>
+        <!-- thẻ font-->
+          <br><font face="verdana">thẻ font face: dùng để đổi font chữ</font>
+          <br><font size="10">thẻ font size: dùng để đổi kích thước chữ</font>
+          <br><font color="red">thẻ font color: dùng để đổi màu chữ</font>
+          <br><font color="green" size="5" face="arial">Nguyễn Công Đạo</font>
+        <!-- <sup>định dạng ký tự trên-->
+          <br>X<sup>2</sup>
+        <!-- <sub>định dạng ký tự dưới-->
+          <br>H<sub>2</sub>O
+        <div>
+        <!-- chèn hình ảnh img src=""-->
+          <br><img src="../ảnh/1687666289.jpg"><img src="../ảnh/701pqUxe.jpg">
+        </div>
+        <!-- ../:lùi 2 cấp-->
+        <!-- ./:lùi 1 cấp-->
+        <!-- thẻ liên kết a href=""-->
+         <br><a href="https://daotaodaihoc.humg.edu.vn/#/home?mode=userinfo">trang chủ HUMG</a>
+         <br><a href="file:///D:/CreateWEB/2321030242/b%C3%A0i%201/index.html">bài 1</a>
+        <!-- bảng-->
+        <!--table: định nghĩa bảng -->
+        <!-- tr: định nghĩa hàng -->
+        <!-- td: định nghĩa cột -->
+        <!-- th: định nghĩa tiêu đề cột -->
+        <!-- caption: định nghĩa tiêu đề bảng -->
+        <!-- kẻ bảng table border-->
+         <br><table>
+        <table border="1">
+          <caption>bảng 1: Thông tin sinh viên</caption>
+           <!-- hàng 1-->
+            <tr>
+                <th>STT</th>
+                <td colspan="2">Họ và tên</td>
+                <th>Mã Sinh Viên</th>
+                <th>Lớp</th>
+                <th>Giới tính</th>
+            </tr>
+          <!-- hàng 2-->
+            <tr>
+                <td>1</td>
+                <td>Nguyễn Văn </td>
+              <td>A</td>
+                <td>2321030242</td>
+                <td>DCTDDH68</td>
+                <td rowspan="2">Nam</td>
+                
+            </tr>
+            <!-- hàng 3-->
+            <tr>
+                <td>1</td>
+                <td>Trần Văn </td>
+                <td> B</td>
+                <td>2321030243</td>
+                <td>DCTDDH68</td>
+              
+            </tr>
+          <!-- hàng 4-->
+            <tr>
+                <td>2</td>
+                <td>Trần Thị C</td>
+                <td> C</td>
+                <td>2321030244</td>
+                <td>DCTDDH68</td>
+                <td>Nữ</td>
+            </tr>         
+         </table>
+        <br><table>
+          <table border="1" cellPadding="8" cellSpacing="0" style="border-collapse: collapse;" style="text-align: center;">
+          <caption>Bảng quy đổi giữa xét tuyển theo học bạ và xét tuyển theo kết quả kỳ thi THPT</caption>
+          <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">Điểm Thi THPT</th>
+                <th colspan="2">Điểm Học Bạ THPT</th>
+            </tr>
+            <tr>
+                <td>c</td>
+                <td>d</td>
+                <td>a</td>
+                <td>b</td>
+            </tr>
+            <tr>
+                <td>Khoảng 1</td>
+                <td>27.5</td>
+                <td>30</td>
+                <td>29</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Khoảng 2</td>
+                <td>22.5</td>
+                <td>27.5</td>
+                <td>24.5</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td>Khoảng 3</td>
+                <td>20</td>
+                <td>22.5</td>
+                <td>22</td>
+                <td>24.5</td>
+            </tr>
+            <tr>
+                <td>Khoảng 4</td>
+                <td>17.5</td>
+                <td>20</td>
+                <td>20</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Khoảng 5</td>
+                <td>15</td>
+                <td>17.5</td>
+                <td>18</td>
+                <td>20</td>
+            </tr>
+
+         </table>
+      <!-- rowspan="2" gộp 2 hàng-->
+      <!-- colspan="2" gộp 2 cột-->
+    </body>
+</html>
