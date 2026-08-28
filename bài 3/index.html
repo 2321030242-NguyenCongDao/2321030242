@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title>Bài 3</title>
+    </head>
+    <body>
+         <MAQUEE>
+            <img src="../ảnh/1687666289.jpg">
+        </MAQUEE><br>
+        <!-- danh sách có 3 kiểu: 
+         1. Danh sách có thứ tự: ol (ordered list)
+         2. Danh sách không thứ tự: ul(unordered list)
+         3. Danh sách định nghĩa: dl (definition list)
+        -->
+         <!-- danh sách có thứ tự ol -->
+        <ol>
+            <li>c+</li>
+            <li>javascript</li>
+            <li>python</li>
+        </ol>
+        <!-- danh sách không thứ tự ul -->
+        <ul>
+            <li>c+</li>
+            <li>javascript</li>
+            <li>python</li>
+        </ul>
+        <h1>Form Đăng Ký</h1>
+        <!-- form vùng chứa thông tin -->
+        <form>
+            <div>
+                <b>Họ và Tên</b><br>
+                <input type="text" placeholder="Họ và Tên">
+                <!-- nếu input không có type sẽ mặc định là text.
+                 placeholder: hiển thị văn bản trong ô input.
+                 readonly: chỉ đọc không cho ghi thông tin vào.
+                 textarea: khu nhập nhiều dòng.
+                 submit: nút submit.
+                 password: ô nhập mật khẩu.
+                 text: ô nhập văn bản.
+                 email: ô nhập địa chỉ email.
+                  -->
+            </div>            
+            <div>
+                <b>Mật Khẩu</b><br>
+                <input type="password" placeholder="Mật Khẩu">
+            </div>
+            <div>
+                <b>Giới Thiệu Bản Thân</b><br>
+                <textarea>Nhập Thông Tin...</textarea>
+            </div>
+            <div>
+                <!-- số đầu: 0
+                 số thứ 2: 3, 8, 9
+                 số còn lại: 0-9 -->
+                <b>Số Điện Thoại</b><br>
+                <input type="tel" pattern="([0]{1}([3,8,9]{1}([0-9]{8})))" placeholder="Số Điện Thoại">
+            </div>
+            <div>
+                <!-- radio button: giới tính(chọn 1 cái).-->
+                <b>Giới Tính</b><br>
+                <input type="radio" name="gioitinh" value="nam">Nam<br>
+                <input type="radio" name="gioitinh" value="nu">Nữ
+            </div>
+            <div>
+                <b>Email</b><br>
+                <input type="email" placeholder="Email">
+            </div>
+            <div>
+                <!-- checkbox(chọn nhiều cái) -->
+                <b>Sở Thích</b><br>
+                <input type="checkbox" name="sothich" value="choigame"> Chơi game<br>
+                <input type="checkbox" name="sothich" value="xemphim"> Xem phim<br>
+                <input type="checkbox" name="sothich" value="nghe nhac"> Nghe nhạc
+            </div>
+            <div>
+                <!-- checkbox(chọn nhiều cái) -->
+                <b>Trình Duyệt WEB Ưa Thích</b><br>
+                <select name="Brower">
+                    <option value="Chrome">Chrome</option>
+                    <option value="Firefox">Firefox</option>
+                    <option value="Safari">Safari</option>
+                    <option value="Cốc Cốc">Cốc Cốc</option>
+                </select>
+            </div>
+            <!-- 0 <input type="range" id="a" value="50">100 -->
+             0 <input type="range" id="a" value="50">100
+            <!-- number: nhập số 
+             button: nút
+             reset: nhập lại -->
+             <div>
+                <b>Năm Sinh</b><br>
+                <input type="number" placeholder="Năm Sinh">
+            </div>
+            <div>
+                <input type="submit">
+                <button>Xác nhận</button>
+                <input type="reset">
+            </div>
+        </form>
+        <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/Ra9mEcvDzmI?si=CtqtYrS8UpG95zmR" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+        </iframe><br>
+       
+        <video controls width="320" height="240">
+            <source src="../video/videoplayback.mp4" type="video/mp4">
+        </video><br>
+        <!-- "../ảnh/Video.mp4" dán đường dẫn của video vào -->
+         <audio controls>
+            <source src="../nhạc/Kẻ Dư Thừa-Khang Việt.mp3" type="audio/mpeg">
+        </audio>
+        <!-- "../ảnh/Audio.mp3" dán đường dẫn của video nhạc vào -->
+    </body>
+</html>
