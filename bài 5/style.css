@@ -1,0 +1,47 @@
+h3{
+    color:white;
+    background-color:black;
+}
+#tieude-1{
+    color:black;
+    background-color:blue;
+}
+.tieude-2{
+    color:cyan;
+    background-color:black;
+}
+div.web4{
+    color:blueviolet;
+    background-color:yellow;
+}
+div.box1{
+  
+    color:black;
+    background-color:red;
+    margin:100px;
+}
+div.box2{
+    
+    color:red;
+    background-color:green;
+    margin:10px 50px 100px 200px;
+    
+}
+div.box3{
+    color:red;
+    background-color:black;
+    margin:100px;
+    padding:10px 50px 100px 200px;
+   
+     display: flex;
+     justify-content: flex-end;
+    
+}
+button.button-1{
+    color:blue;
+    background-color:yellow;
+}
+button.button-2{
+    color:red;
+    background-color:black;
+}
