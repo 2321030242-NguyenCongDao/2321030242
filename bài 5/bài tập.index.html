@@ -4,107 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cổng Thông Tin Đào Tạo HUMG</title>
-    <style>
-        .menu{
-            background-color: #2fa4e7;    
-        }
-        .danh-sach-muc{
-            /* bỏ dấu chấm mục */
-            list-style: none;
-            display: flex;
-            
-        }
-        .muc{
-             color: white;
-             font-weight: bold;
-             padding: 15px;
-             
-        }
-        /* chỉnh màu chữ và bỏ gạch chân cho thẻ a */
-        a{
-            color: white;
-            text-decoration: none;
-        }
-        /* danh sách mục */
-        main{
-            display: flex;
-            gap: 10px;
-            /* gap khiến cho các phần tử trong khối cách nhau bằng giá trị nhập vào */
-        }
-        .left{
-        
-            width: 20%;
-            height: 90vh;
-            border-right: 1px solid #2fa4e7;
-            
-            /* border để vẽ đường viền
-                border có 3 thuộc tính: border-width, border-style, border-color
-                nếu margin để auto sẽ căn ra giữa */
-        }
-        .p{
-            margin: 0px;
-        }
-        input{
-            width: 100%;
-            height: 5px 0;
-            border-radius: 5px;
-            border: 1px solid gray;
-        }
-        .dang-nhap{
-            width: 90%;
-            height: 5px;
-            margin: 10px auto;
-        }
-        .quen-mk{
-            text-align: right;
-            display: flex;
-            justify-content: flex-end;
-        }
-        .quen-mk-link{
-            text-decoration: none;
-            color: #2fa4e7;
-        }
-        .button{
-            width: 100%;
-            padding: 10px 0;
-            margin-top: 10px;
-            border-radius: 5px;
-            border: 1px solid gray;
-            background-color: #2fa4e7;
-            color: white;    
-        }
-        .right{
-          
-            width: 80%;
-            height: 90vh;
-        }
-        .thong-tin-1{
-            width: 90%;
-            height: 300px;
-            margin: 20px auto;
-            border: 1px solid #2fa4e7;
-            border-radius: 5px;
-        }
-        .tin-tren{
-            width: 95%;
-            margin: auto;
-            border-bottom: 1px solid #2fa4e7;
-            display: flex;
-            justify-content: space-between;
-            padding: 10px;
-        }
-        h3{
-            margin: 0px;
-        }
-        .xem-tiep{
-            color: #2fa4e7;
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
     <!-- danh mục -->
-    <nav class="menu">
+    <nav class="danh-muc">
             <ul class="danh-sach-muc" style="margin: 0px;">
                 <li class="muc"><a href="#">Thực Tập, Đồ án</a></li>
                 <li class="muc"><a href="#">Thủ tục Một Cửa</a></li>
@@ -114,36 +18,87 @@
     </nav>
     <!-- nội dung chính -->
     <main>
-       <div class="left">
-        <div class="dang-nhap"></div>
+        <div class="khoi-trai">
+        <div class="khoi-dang-nhap">
            <form action="">
-            
-            <p>Tài khoản</p>
-            <input type="text" placeholder="Tài Khoản"><br>
-            <p>Mật Khẩu</p>
-            <input type="password" placeholder="Mật Khẩu">
-            <br>
-            <div class="quen-mk">
-            <i><a class="quen-mk-link" href="#">Quên mật khẩu?</a></i>
+              <div class="thong-tin">
+                <p>Tài Khoản</p>
+                <input type="text" placeholder="Tài Khoản">
             </div>
-            <div class="dang-nhap-1">
-            <input type="submit" value="Đăng Nhập" class="button">
+            <div class="thong-tin">
+                <p>Mật Khẩu</p>
+                <input type="password" placeholder="Mật Khẩu">
+            </div>
+            <div class="quen-mk">
+            <i><a class="lien-ket-quen-mk" href="#">Quên mật khẩu?</a></i>
+            </div>
+            <div class="chuc-nang-dang-nhap">
+                <button class="dang-nhap">Đăng Nhập</button>
+                <button class="dang-nhap-365">Đăng Nhập Với Microsoft Office 365</button>
         </div>
-        <div class="dang-nhap">
-            <input type="submit" value="Đăng nhập với microsoft office 365" class="button">
-        </div>
-           </form>
-       </div>
-
-       <div class="right">
-        <div class="thong-tin-1">
+    </form>
+    </div>
+       <div class="khoi-phai">
+        <div class="tin">
             <div class="tin-tren">
                 <h3 class="tieu-de-1">Tin Tức</h3>
-                <p class="xem-tiep" href="#">Xem tiếp</p>
+                <p><a class="xem-tiep" href="#">Xem tiếp</a></p>
+            </div>
+       <!-- danh sách tin -->
+        <div class="danh-sach-tin">
+            <div class="bai-viet">
+                <div class="bai-viet-khoi-anh">
+                    <img src="../ảnh/1789127699358_5002682798019492024_g8831982527278283588_dff7cf0376bb3b32cd2e8155d453c24e.jpg" alt="">
+                </div>
+                <div class="bai-viet-thoi-gian">
+                    <p>05/05/2026</p>
+                </div>
+                <div>
+                    <p>Về việc đăng ký khối lượng học tập học kỳ phụ năm học 2025-2026</p>
+                </div>
+            </div>
+        <div class="bai-viet">
+            <div class="bai-viet-khoi-anh">
+                <img src="../ảnh/1789127699358_5002682798019492024_g8831982527278283588_dff7cf0376bb3b32cd2e8155d453c24e.jpg" alt="">
+            </div>
+            <div class="bai-viet-thoi-gian">
+                <p>05/05/2026</p>
+            </div>
+            <div>
+                <p>Về việc đăng ký khối lượng học tập học kỳ phụ năm học 2025-2026</p>
             </div>
         </div>
-
-       </div>
+        <div class="bai-viet">
+            <div class="bai-viet-khoi-anh">
+                <img src="../ảnh/1789127699358_5002682798019492024_g8831982527278283588_dff7cf0376bb3b32cd2e8155d453c24e.jpg" alt="">
+            </div>
+            <div class="bai-viet-thoi-gian">
+                <p>05/05/2026</p>
+            </div>
+            <div>
+                <p>Về việc đăng ký khối lượng học tập học kỳ phụ năm học 2025-2026</p>
+            </div>
+            <!-- thông báo -->
+        <div class="tin-1">
+                <div class="tin-tren-1">
+                    <h3 class="tieu-de-1">Thông Báo</h3>
+                    <p>
+                        <a class="xem-tiep-1" href="">
+                            Xem tiếp >
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="tin-2">
+                <div class="tin-tren-2">
+                    <h3 class="tieu-de-2">Hướng Dẫn</h3>
+                    <p>
+                        <a class="xem-tiep-2" href="">
+                            Xem tiếp >
+                        </a>
+                    </p>
+                </div>
+            </div>
     </main>
 </body>
 </html>
