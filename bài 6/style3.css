@@ -66,6 +66,35 @@ header{
     }
 }
 
+/* PHẦN NHÂN VẬT */
+.ten-nhan-vat {
+    width: 90%;
+    margin: 40px auto 20px;
+}
+
+/* Danh sách nhân vật */
+.icon {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Từng nhân vật */
+.nhan-vat {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+/* Ảnh bên trong hình tròn */
+.nhan-vat img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    display: block;
+}
 .ten-nhan-vat {
     display: flex;
     justify-content: space-between;
@@ -75,7 +104,7 @@ header{
 }
 
 .icon {
-    width: 18%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -83,7 +112,7 @@ header{
 
 .nhan-vat {
     width: 100%;
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 .nhan-vat img {
