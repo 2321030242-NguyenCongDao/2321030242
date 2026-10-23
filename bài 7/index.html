@@ -208,11 +208,72 @@
             document.writeln("Điểm B");
         }
         else if(diem>=8 && diem<=10){
-            document.writeln("Điểm B");
+            document.writeln("Điểm A");
         }
         else {
             document.writeln("Điểm Không hợp lệ");
         }
+        //object: var name = {}
+        var thongtinsinhvien = {
+            hoten: "Nguyễn Công Đạo",
+            tuoi: 21,
+            gioitinh: true, //true=nam;false=nữ
+            diachi: {
+                thanhpho: "hanoi",
+                phuong: "dongngac",
+                duong: "levanhien",
+            }
+        }
+        var thongtinphim = {
+            tenphim: "Nguyễn Văn Mười",
+            daodien: "shinkai makoto",
+            nam: 2016,
+            theloai: "tình cảm",
+            thoiluong: 124,
+            dienvienlongtieng: {
+                nhanvatchinh: [
+                    "taki", "mistuha"
+                ],
+                nhanvatphu: [
+                    "A","B"
+                ]
+            }
+        }
+        document.writeln("<br>");
+        document.writeln(thongtinphim.dienvienlongtieng.nhanvatchinh[1])
+        //switch
+        document.writeln("<br>")
+        var d= new Date();
+        var theday= d.getDay();
+        switch (theday){
+            case 5:
+                document.writeln("finally friday");
+                break;
+            case 6:
+                document.writeln("happy saturday");
+                break;
+            case 0:
+                document.writeln("sadness sunday");
+                break;
+            default: 
+                document.writeln("i'm looking forward to this weekend");
+        }
+        for (var index=1; index<=10; index++){
+            document.writeln("<br> Xin Chào!", +index);
+        }
+        var danhsach=["Thuy", "Mai", "Tuan", "Thang", "Thao"];
+        document.writeln("<br>Hello!" + danhsach[0]);
+        for (var i = 0; i < danhsach.length; i++){
+            document.writeln("<br>"+i+"<br>");
+            document.writeln("Hello "+ danhsach[i]);
+        }
+        for (var i=0; i< danhsach.length;i++){
+            if(danhsach[i]=="Thuy"|| danhsach[i]=="Tuan"){
+            document.writeln("<br>")
+            document.writeln("Xin Chào "+ danhsach[i]);
+            }
+        }
+
      </script>
     <!-- external java -->
      <script src="script.js"></script>
