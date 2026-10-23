@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 8</title>
+</head>
+<body>
+    <div>
+        Họ và tên: <input type="text" id="hovaten">
+    </div>
+    <div>
+        <button onclick="xinchao('công đạo',21)">xin chào</button>
+    </div>
+    <div>
+        kết quả: <input type="text" id="ketqua">
+    </div>
+    
+    <div>
+        số thứ 1: <input type="number" id="sothunhat">
+    </div>
+    <div>
+        số thứ 2: <input type="number" id="sothuhai">
+    </div>
+    <div>
+        <button onclick="tinhtong()">Tính tổng</button>
+    </div>
+    <div>
+        kết quả: <input type="text" id="tong">
+    </div>
+    <script>
+        function tinhtong(){
+            var sothunhat = parseFloat(document.getElementById("sothunhat").value);
+            var sothuhai = parseFloat(document.getElementById("sothuhai").value);
+            document.getElementById("tong").value = sothunhat + sothuhai
+        }
+        // function
+        // để tạo function dùng cú pháp
+        // 1: hàm không có tham số
+        // function + tên (){}
+        function xinchao(){
+            //document.write("Hello!");
+            var ten = document.getElementById("hovaten").value;
+            document.getElementById("ketqua").value = "xin chào " + ten;
+        }
+        // gọi hàm
+        xinchao()
+        // 2: hàm có tham số
+        // function + tên(){}
+        // lưu ý: các tham số cách nhau bởi dấu ,
+        function xinchao2(ten,tuoi){
+            document.write("xin chào " + ten +" tuổi " + tuoi);
+        }
+        xinchao2("Đạo",21)
+        // tạo hàm tính chu vi hình chữ nhật
+        function chuvi(a,b){
+            document.write((a+b)*2)
+        }
+        document.write("chu vi hình chữ nhật là: ")
+        chuvi(20,2)
+        document.writeln("<br>")
+        var danhsachsv=["thuỷ","dương","việt","huệ","thắng"]
+        for (var i = 0; i < danhsachsv.length; i++){
+            document.writeln("Hello "+ danhsachsv[i]+"<br>");
+        }
+        for (var i = 0; i < danhsachsv.length; i++){
+            if(danhsachsv[i] !="việt"){
+            document.writeln("<br>")
+            document.writeln("Xin Chào "+ danhsachsv[i]);
+            }
+        }
+        function timkiem(ds,ten){
+            var cosinhvien=false;
+            for (var i=0; i<ds.length;i++){
+                if(ds[i] == ten){
+                    cosinhvien=true; 
+                }
+            }
+            if(cosinhvien==true){
+                document.writeln("<br>có sinh viên "+ ten + " trong danh sách")
+            }
+            else(
+                    document.writeln("<br>không có sinh viên "+ ten + " trong danh sách")
+                )
+        }
+        timkiem(danhsachsv, "thuỷ");
+
+    </script>
+</body>
+</html>
