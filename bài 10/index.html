@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 10</title>
+    <style>
+        main{
+            display: flex;
+
+        }
+        .trai{
+            width: 75%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .phai{
+            width: 25%;
+            border: 1px solid grey;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .video{
+            width: 90%;
+            height: 400px;
+            background-color: black;
+            border-radius: 20px;
+
+        }
+        h1{
+            text-align: center;
+        }
+        .bai-hat{
+            width: 95%;
+            height: 80px;
+            margin: 10px auto;
+            background-color: antiquewhite;
+            display: flex;
+            align-items: center;
+        }
+        .bai-hat:hover{background-color: grey;
+        }
+        img{
+            width: 40%;
+            margin-right: 10px;
+        }
+        p{
+            width: 75px;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div class="trai">
+            <!-- <div class="video">
+            </div> -->
+                 <iframe id="video" 
+                 width="560" 
+                 height="315" 
+                 src="https://www.youtube.com/embed/UFmeguXYLiE?si=0IJAZsR_ZyCTe9wn" 
+                 allowfullscreen></iframe>
+        </div>
+        <div class="phai">
+            <h1>Danh Sách</h1>
+            <div class="danh-sach">
+                <div onclick="chonbai(1)" class="bai-hat">
+                <img class="anh-bai" src="../ảnh/thịnh vượng việt nam sáng ngời.avif" alt="">
+                <p>Thịnh Vượng Việt Nam Sáng Ngời</p>
+                </div>
+                <div onclick="chonbai(2)" class="bai-hat">
+                    <img class="anh-bai" src="..\ảnh/ba kể con nghe.avif" alt="">
+                    <p>Ba Kể Con Nghe</p>
+                </div>
+                <div onclick="chonbai(3)" class="bai-hat">
+                    <img class="anh-bai" src="..\ảnh/buồn thì cứ khóc.avif" alt="">
+                    <p>Buồn Thì Cứ Khóc Đi</p>
+                </div>
+                <div onclick="chonbai(4)" class="bai-hat">
+                    <img class="anh-bai" src="..\ảnh/nhắm mắt thấy mùa hè.avif" alt="">
+                    <p>Nhắm Mắt Thấy Mùa Hè</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
