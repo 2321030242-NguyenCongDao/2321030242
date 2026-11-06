@@ -1,52 +1,32 @@
-function doianh(so) {
-    var anhcu = document.getElementById("anhbanner").src;
-    var anh;
 
-    if (so == 1) {
-        anh = document.getElementById("anh1");
+var danhsachanh = [
+    { id: 1, ten: "anh1" },
+    { id: 2, ten: "anh2" },
+    { id: 3, ten: "anh3" },
+    { id: 4, ten: "anh4" },
+    { id: 5, ten: "anh5" },
+    { id: 6, ten: "anh6" },
+    { id: 7, ten: "anh7" },
+    { id: 8, ten: "anh8" },
+    { id: 9, ten: "anh9" },
+    { id: 10, ten: "anh10" },
+    { id: 11, ten: "anh11" },
+    { id: 12, ten: "anh12" },
+    { id: 13, ten: "anh13" },
+    { id: 14, ten: "anh14" },
+    { id: 15, ten: "anh15" }
+];
+
+function doianh(id) {
+    var anhbanner = document.getElementById("anhbanner");
+    var anhcu = anhbanner.src;
+
+    for (var i = 0; i < danhsachanh.length; i++) {
+        if (danhsachanh[i].id == id) {
+            var anh = document.getElementById(danhsachanh[i].ten);
+
+            anhbanner.src = anh.src;
+            anh.src = anhcu;
+        }
     }
-    else if (so == 2) {
-        anh = document.getElementById("anh2");
-    }
-    else if (so == 3) {
-        anh = document.getElementById("anh3");
-    }
-    else if (so == 4) {
-        anh = document.getElementById("anh4");
-    }
-    else if (so == 5) {
-        anh = document.getElementById("anh5");
-    }
-    else if (so == 6) {
-        anh = document.getElementById("anh6");
-    }
-    else if (so == 7) {
-        anh = document.getElementById("anh7");
-    }
-    else if (so == 8) {
-        anh = document.getElementById("anh8");
-    }
-    else if (so == 9) {
-        anh = document.getElementById("anh9");
-    }
-    else if (so == 10) {
-        anh = document.getElementById("anh10");
-    }
-    else if (so == 11) {
-        anh = document.getElementById("anh11");
-    }
-    else if (so == 12) {
-        anh = document.getElementById("anh12");
-    }
-    else if (so == 13) {
-        anh = document.getElementById("anh13");
-    }
-    else if (so == 14) {
-        anh = document.getElementById("anh14");
-    }
-    else if (so == 15) {
-        anh = document.getElementById("anh15");
-    }
-    document.getElementById("anhbanner").src = anh.src;
-    anh.src = anhcu;
 }
