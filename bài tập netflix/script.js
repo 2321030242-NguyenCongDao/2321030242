@@ -20,7 +20,7 @@ var danhsachanh = [
 function doianh(id) {
     var anhbanner = document.getElementById("anhbanner");
     var anhcu = anhbanner.src;
-
+    
     for (var i = 0; i < danhsachanh.length; i++) {
         if (danhsachanh[i].id == id) {
             var anh = document.getElementById(danhsachanh[i].ten);
